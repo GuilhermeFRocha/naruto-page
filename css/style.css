@@ -1,0 +1,140 @@
+.cabecalho {
+    width: 100%;
+    height: 300px;
+    background-image: url(../img/naruto.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.cabecalho h1 {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 110px;
+}
+
+.cabecalho ul {
+    display: flex;
+    font-size: 36px;
+    padding-top: 50px;
+}
+
+.cabecalho ul li {
+    margin: 10px;
+    list-style: none;
+    color: #000;
+}
+
+.cabecalho ul li a {
+
+    color: #000;
+}
+
+.contenier {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-image: url(https://vignette.wikia.nocookie.net/does/images/4/42/Fundo_Wiki_Naruto_2.png/revision/latest?cb=20151118005138&path-prefix=pt-br) !important;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.caixa1 {
+    width: 50%;
+    background: white;
+    padding: 0 10px;
+    margin-top: 20px;
+    border: ridge 6px yellow;
+}
+
+.caixa1 p {
+    padding-top: 5px;
+}
+
+.caixa2 img {
+    margin: 0 auto;
+}
+
+.naruto-personagens {
+    display: flex;
+    padding-top: 50px;
+}
+
+.naruto-7 {
+    padding: 0 30px;
+}
+
+.naruto-15 {
+    padding: 0 30px;
+}
+
+.naruto-19 {
+    padding: 0 30px;
+}
+
+.naruto-32 {
+    padding: 0 30px;
+}
+
+.caixa2 {
+    width: 30%;
+    background: white;
+    border: ridge 6px yellow;
+    margin-top: 20px;
+}
+
+.caixa2 p {
+    text-align: center;
+    padding: 0 30px 20px 30px;
+    font-size: 12px;
+    line-height: 18px;
+    font-style: italic;
+}
+
+.subtitulo {
+    color: #000;
+    font-size: 20px;
+    padding-top: 20px;
+    text-align: center;
+    margin: 10px 0px;
+    font-weight: bold;
+}
+
+.img {
+    text-align: center;
+}
+
+.subtitulo-class {
+    display: flex;
+    border: top solid #ccc;
+}
+
+.subtitulo-class h2 {
+    padding-left: 30px;
+    font-weight: bold;
+}
+
+.subtitulo-class img {
+    margin-right: 5px
+}
+
+.subtitulo-class p {
+    padding: 0 80px 0 0px;
+    font-size: 16px;
+
+}
+
+.subtitulo-pt {
+    color: #000;
+    font-size: 25px;
+    padding-top: 20px;
+    text-align: center;
+    margin: 10px 0px;
+
+}
+
+.subtitulo-img  {
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 0;
+}
