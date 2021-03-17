@@ -1,9 +1,15 @@
 .cabecalho {
+    display: table;
     width: 100%;
-    height: 300px;
-    background-image: url(../img/naruto.jpg);
-    background-repeat: no-repeat;
-    background-position: right;
+    text-align: center;
+    color: black;
+    background-position: 30% 45%;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+          background-image: url(../img/naruto.jpg);
 }
 
 .cabecalho h1 {
@@ -44,6 +50,7 @@
     background: white;
     padding: 0 10px;
     margin-top: 20px;
+    margin-bottom: 20px;
     border: ridge 6px yellow;
 }
 
@@ -51,29 +58,11 @@
     padding-top: 5px;
 }
 
-.caixa2 img {
-    margin: 0 auto;
-}
 
 .naruto-personagens {
     display: flex;
     padding-top: 50px;
-}
-
-.naruto-7 {
-    padding: 0 30px;
-}
-
-.naruto-15 {
-    padding: 0 30px;
-}
-
-.naruto-19 {
-    padding: 0 30px;
-}
-
-.naruto-32 {
-    padding: 0 30px;
+    
 }
 
 .caixa2 {
@@ -81,6 +70,7 @@
     background: white;
     border: ridge 6px yellow;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .caixa2 p {
@@ -101,7 +91,8 @@
 }
 
 .img {
-    text-align: center;
+    text-align: center;    
+
 }
 
 .subtitulo-class {
@@ -138,3 +129,60 @@
     text-align: center;
     padding: 20px 0;
 }
+
+
+
+.footer {
+    background-image: url(../img/fundo-2.jpg);
+    
+    display: table;
+    width: 100%;
+    padding: 25px 0;
+    text-align: center;
+    background-position: 30% 10%;
+    
+    background-size: cover;
+    
+    }
+    
+    .footer h3 {
+    font-size: 18px;
+    line-height: 25px;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: bold;
+    padding-bottom: 30px;
+    }
+    
+    .footer_historia {
+    padding-right: 40px;
+    }
+    
+    .footer_historia p {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+
+    .footer_contato ul li {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Georgia, "Times New Roman", serif;
+    }
+    
+    .footer_contato ul li a {
+    color: #000;
+    }
+    
+    .footer_redes ul li {
+    display: inline-block;
+    margin-right: 10px;
+    }
+    
+    .footer_redes ul li a {
+    border: 3px solid #000;
+    display: block;
+    padding: 10px;
+    }
+    
