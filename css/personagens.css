@@ -1,0 +1,111 @@
+.cabecalho {
+    display: table;
+    width: 100%;
+    text-align: center;
+    color: black;
+    background-position: 30% 45%;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+          background-image: url(../img/naruto.jpg);
+}
+
+.cabecalho h1 {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 110px;
+}
+
+.cabecalho ul {
+    display: flex;
+    font-size: 36px;
+    padding-top: 50px;
+}
+
+.cabecalho ul li {
+    margin: 10px;
+    list-style: none;
+    color: #000;
+}
+
+.cabecalho ul li a {
+
+    color: #000;
+}
+
+
+/* Personagens */
+
+
+
+.contenier-person{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    padding: 30px 0; 
+    flex-wrap: wrap;   
+    background-image: url(../img/cl.jpg);      
+    background-size: 58%;
+    }
+
+.contenier-person .jutsu h1 {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+}   
+
+.contenier-person img{
+    
+}
+
+.titulo {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+.tobi{
+
+    background-color: white;
+    border: 3px solid blue;
+}
+
+.info-1 {
+    padding: 10px 10px;
+    color: black;
+    font-size: 20px;
+	line-height: 20px;
+	font-family: Georgia, "Times New Roman", serif;
+    border: 6px outset #B2ADAD;
+    text-align: left;
+    
+}
+
+.info-2{
+    padding: 10px 10px;
+    color: black;
+    font-size: 20px;
+	line-height: 20px;
+	font-family: Georgia, "Times New Roman", serif;
+    border: 6px outset #B2ADAD;
+    text-align: left;
+    }
+
+
+.natureza{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.natureza:after{
+    content: "";
+	display: block;
+	width: 238px;
+	height: 3px;
+	background: black;
+}

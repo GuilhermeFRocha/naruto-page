@@ -1,3 +1,5 @@
+/* Cabeçalho */
+
 .cabecalho {
     display: table;
     width: 100%;
@@ -35,15 +37,16 @@
     color: #000;
 }
 
+/* home*/
+
 .contenier {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    background-image: url(https://vignette.wikia.nocookie.net/does/images/4/42/Fundo_Wiki_Naruto_2.png/revision/latest?cb=20151118005138&path-prefix=pt-br) !important;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
+    background-image: url(../img/Rótulo-Espumante-Fundo-Naruto.jpg) !important;
+    background-repeat: repeat;
+
+   }
 
 .caixa1 {
     width: 50%;
@@ -51,7 +54,7 @@
     padding: 0 10px;
     margin-top: 20px;
     margin-bottom: 20px;
-    border: ridge 6px yellow;
+    border: ridge 6px white;
 }
 
 .caixa1 p {
@@ -68,7 +71,7 @@
 .caixa2 {
     width: 30%;
     background: white;
-    border: ridge 6px yellow;
+    border: ridge 6px white;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -92,7 +95,7 @@
 
 .img {
     text-align: center;    
-
+    
 }
 
 .subtitulo-class {
@@ -131,6 +134,11 @@
 }
 
 
+
+
+
+
+/* footer */
 
 .footer {
     background-image: url(../img/fundo-2.jpg);
@@ -185,4 +193,10 @@
     display: block;
     padding: 10px;
     }
+    
+
+
+
+
+
     
