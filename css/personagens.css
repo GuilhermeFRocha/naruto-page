@@ -50,7 +50,7 @@
     background-size: 58%;
     }
 
-.contenier-person .jutsu h1 {
+.jutsu h1 {
     font-weight: bold;
     font-size: 20px;
     text-align: center;
@@ -105,3 +105,60 @@
 	height: 3px;
 	background: black;
 }
+
+
+.footer {
+    background-image: url(../img/mm-removebg-preview.png);
+    background-color: black;
+    display: table;
+    width: 100%;
+    padding: 25px 0;
+    text-align: center;
+    background-position: 100% 10%;
+    background-size: 380px;
+    background-repeat: no-repeat;
+    }
+    
+    .footer h3 {
+    font-size: 18px;
+    line-height: 25px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: bold;
+    padding-bottom: 30px;
+    }
+    
+    .footer_historia {
+    padding-right: 40px;
+    }
+    
+    .footer_historia p {
+        font-size: 18px;
+        margin-bottom: 30px;
+        color: #fff;
+    }
+
+
+    .footer_contato ul li {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Georgia, "Times New Roman", serif;
+    }
+    
+    .footer_contato ul li a {
+    color: #fff;
+    }
+    
+    .footer_redes ul li {
+    display: inline-block;
+    margin-right: 10px;
+    }
+    
+    .footer_redes ul li a {
+    border: 3px solid #fff;
+    display: block;
+    padding: 10px;
+    }
+    
+  
