@@ -12,28 +12,46 @@
           background-image: url(../img/naruto.jpg);
 }
 
+.cabecalho h1 img {
+    background-size: 30px;
+}
+
 .cabecalho h1 {
     text-align: center;
     font-size: 50px;
     padding-top: 110px;
+}
+.cabecalho h1 :hover{
+    color: black;
+    
 }
 
 .cabecalho ul {
     display: flex;
     font-size: 36px;
     padding-top: 50px;
+    margin-bottom: 5px;
 }
 
 .cabecalho ul li {
     margin: 10px;
     list-style: none;
     color: #000;
+    
 }
 
 .cabecalho ul li a {
-
-    color: #000;
+    padding: 10px;
+    border: 2px solid black;
+    color: black;
 }
+
+
+.cabecalho ul li a:hover{
+    color: orange;
+	border-color: orange;
+}
+
 
 
 /* Personagens */
