@@ -1,39 +1,51 @@
 /* Cabeçalho */
 
+body{
+
+    background: #f12711;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+
+
+
 .cabecalho {
-    display: table;
-    width: 100%;
-    text-align: center;
-    color: black;
-    background-position: 30% 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-          background-image: url(../img/naruto.jpg);
+    
 }
 
 .cabecalho img {
-    width:300px;
-    height:130px;
-    animation: loading 1s linear 
+    width:150px;
+    height:80px;
+    animation: loading 0.5s linear;
+    
+
+        
 }
 
 
 @keyframes loading {
 	0% {
-		transform: rotate(0);
+		opacity: 0;
+        margin-left: -500px;
 	}
 	100% {
-		transform: rotate(360deg);
+        margin: initial;
+	    opacity: 1;
 	}
 }
 
 .cabecalho h1 {
     text-align: center;
     font-size: 50px;
-    padding-top: 110px;
 }
 .cabecalho h1 :hover{
     color: black;
@@ -42,10 +54,9 @@
 
 .cabecalho ul {
     display: flex;
-    font-size: 36px;
-    padding-top: 50px;
+    font-size: 20px;
     margin-bottom: 5px;
-}
+}   
 
 .cabecalho ul li {
     margin: 10px;
@@ -55,15 +66,19 @@
 }
 
 .cabecalho ul li a {
+    
+    color: #fff;
+    background-image: -webkit-linear-gradient(45deg, #24496c 50%, transparent 50%);
+    background-image: linear-gradient(45deg, #24496c 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
     padding: 10px;
-    border: 2px solid black;
-    color: black;
+    border: 1px solid #fff;
 }
-
-
 .cabecalho ul li a:hover{
-    color: orange;
-	border-color: orange;
+    background-position: 0;
 }
 
 /* home*/
@@ -71,34 +86,46 @@
 .contenier {
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    background-image: url(../img/cl.jpg) !important;
-    background-size: 30%;    
-   }
+    justify-content: space-between;
+}
 
 .caixa1 {
-    width: 50%;
-    background: white;
+    width: 60%;
+    background: rgba(255, 255, 255, 0.3);
     padding: 0 10px;
     margin-top: 20px;
     margin-bottom: 20px;
-    border: ridge 6px white;
+    box-shadow: 5px 7px 20px #fff;
+    color: #000
+}
+
+.caixa1 h1{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .caixa1 p {
+    width: 80%;
     padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 1.2;
+    font-size: 17px;
+    text-align: justify;
+    margin: 0 auto;
 }
 
 
 .naruto-personagens {
     display: flex;
-    padding-top: 50px;
+    padding: 50px 0 10px 0;
 }
 
 .caixa2 {
     width: 30%;
-    background: white;
-    border: ridge 6px white;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 5px 7px 20px #fff;
+    color: #000;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -122,28 +149,46 @@
 
 .img {
     text-align: center;    
-    
+    width: 80%;
+    margin: 0 auto;
+}
+
+.img img {
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
 }
 
 .subtitulo-class {
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
     border: top solid #ccc;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    width: 80%;
+    margin: 0 auto;
 }
+
 
 
 .subtitulo-class h2 {
     padding-left: 30px;
     font-weight: bold;
+    margin-top: 5px;
 }
 
 .subtitulo-class img {
-    margin-right: 5px
+    margin-right: 5px;
+    margin-top: 5px;
+    
 }
 
 .subtitulo-class p {
+    margin-bottom: 5px;
     padding: 0 80px 0 0px;
     font-size: 16px;
-
+    margin-top: 5px;
 }
 
 .subtitulo-pt {
@@ -162,64 +207,78 @@
 }
 
 
+.carrosel{
+    width: 100%;
+    height: 168px;
+    outline: 2px solid black;
+    overflow: hidden; 
+    margin: 0px auto;
+    background-image: url(../img/cl.jpg) !important;
+}
+.carrosel ul {
+    display: flex;
+    list-style: none;
+    width: 1768px;
+    height: 168px;
 
+}
+
+.carrosel  li{
+    position: relative;
+    animation: slide 10s infinite ease-out;
+    
+}
+
+@keyframes slide{
+    0%{left:0px}
+    50%{left: -240px}
+    100%{left: -600px}
+}
 
 
 
 /* footer */
 
-.footer {
-    background-image: url(../img/mm-removebg-preview.png);
-    background-color: black;
-    display: table;
+.container {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
-    padding: 25px 0;
-    text-align: center;
-    background-position: 100% 10%;
-    background-size: 380px;
-    background-repeat: no-repeat;
-    }
+    margin-top: 20px;
+}
     
-    .footer h3 {
+    .footer_subtitulo {
+        width: 80%;
     font-size: 18px;
     line-height: 25px;
-    color: #fff;
-    text-transform: uppercase;
     letter-spacing: .1em;
     font-weight: bold;
-    padding-bottom: 30px;
+    text-align: center;
+    }
+        
+    .footer_subtitulo p {
+        font-size: 16px;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-transform: none;
     }
     
-    .footer_historia {
-    padding-right: 40px;
-    }
-    
-    .footer_historia p {
-        font-size: 18px;
-        margin-bottom: 30px;
-        color: #fff;
+
+    .footer_historia  {
+        text-align:center;
     }
 
+    .footer_redes ul {
+        display: flex;
+    }
 
-    .footer_contato ul li {
-    font-size: 14px;
-    line-height: 20px;
-    font-family: Georgia, "Times New Roman", serif;
-    }
-    
-    .footer_contato ul li a {
-    color: #fff;
-    }
-    
     .footer_redes ul li {
-    display: inline-block;
     margin-right: 10px;
+    margin-top: 10px;
     }
     
-    .footer_redes ul li a {
-    border: 3px solid #fff;
-    display: block;
-    padding: 10px;
-    }
     
-  
+    .footer_redes li :hover{
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }

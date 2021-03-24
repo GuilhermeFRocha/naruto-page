@@ -1,182 +1,57 @@
-.cabecalho {
-    display: table;
-    width: 100%;
-    text-align: center;
-    color: black;
-    background-position: 30% 45%;
-    
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-          background-image: url(../img/naruto.jpg);
-}
-
-.cabecalho h1 img {
-    background-size: 30px;
-}
-
-.cabecalho h1 {
-    text-align: center;
-    font-size: 50px;
-    padding-top: 110px;
-}
-.cabecalho h1 :hover{
-    color: black;
-    
-}
-
-.cabecalho ul {
-    display: flex;
-    font-size: 36px;
-    padding-top: 50px;
-    margin-bottom: 5px;
-}
-
-.cabecalho ul li {
-    margin: 10px;
-    list-style: none;
-    color: #000;
-    
-}
-
-.cabecalho ul li a {
-    padding: 10px;
-    border: 2px solid black;
-    color: black;
-}
-
-
-.cabecalho ul li a:hover{
-    color: orange;
-	border-color: orange;
-}
-
-
-
 /* Personagens */
 
+body {
+    width: 80%;
+    
+}
 
-
-.contenier-person{
+.contenier-person {
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    background: white;
-    padding: 30px 0; 
-    background-image: url(../img/cl.jpg);      
-    background-size: 58%;
-    }
+    justify-content: space-between;
+}
+
+
+
+.titulo h2 {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.info-2 {
+    
+    font-family: Georgia, "Times New Roman", serif;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 5px 7px 20px #fff;
+    color: #000
+}
+
+
+.jutsu  img{
+    box-shadow: 7px 7px 20px #000;
+}
 
 .jutsu h1 {
     font-weight: bold;
     font-size: 20px;
     text-align: center;
     padding-bottom: 10px;
-}   
-
-
-.titulo {
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-    
 }
 
-.tobi{
-
-    background-color: white;
-    border: 3px solid blue;
-}
-
-.info-1 {
-    padding: 10px 10px;
-    color: black;
-    font-size: 20px;
-	line-height: 20px;
-	font-family: Georgia, "Times New Roman", serif;
-    border: 6px outset #B2ADAD;
-    text-align: left;
-    
-}
-
-.info-2{
-    padding: 10px 10px;
-    color: black;
-    font-size: 20px;
-	line-height: 20px;
-	font-family: Georgia, "Times New Roman", serif;
-    border: 6px outset #B2ADAD;
-    text-align: left;
-    }
-
-
-.natureza{
+.natureza {
     font-weight: bold;
     font-size: 20px;
 }
 
-.natureza:after{
+.natureza:after {
     content: "";
-	display: block;
-	width: 238px;
-	height: 3px;
-	background: black;
-}
-
-
-.footer {
-    background-image: url(../img/mm-removebg-preview.png);
-    background-color: black;
-    display: table;
-    width: 100%;
-    padding: 25px 0;
-    text-align: center;
-    background-position: 100% 10%;
-    background-size: 380px;
-    background-repeat: no-repeat;
-    }
-    
-    .footer h3 {
-    font-size: 18px;
-    line-height: 25px;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: .1em;
-    font-weight: bold;
-    padding-bottom: 30px;
-    }
-    
-    .footer_historia {
-    padding-right: 40px;
-    }
-    
-    .footer_historia p {
-        font-size: 18px;
-        margin-bottom: 30px;
-        color: #fff;
-    }
-
-
-    .footer_contato ul li {
-    font-size: 14px;
-    line-height: 20px;
-    font-family: Georgia, "Times New Roman", serif;
-    }
-    
-    .footer_contato ul li a {
-    color: #fff;
-    }
-    
-    .footer_redes ul li {
-    display: inline-block;
-    margin-right: 10px;
-    }
-    
-    .footer_redes ul li a {
-    border: 3px solid #fff;
     display: block;
-    padding: 10px;
-    }
-    
-  
+    width: 238px;
+    height: 3px;
+    background: black;
+}
