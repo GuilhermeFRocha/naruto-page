@@ -1,7 +1,4 @@
-/* Cabeçalho */
-
 body{
-
     background: #f12711;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -9,26 +6,17 @@ body{
     margin: 0 auto;
 }
 
-
-
-
-
-
+/* Cabeçalho */
 .cabecalho {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    
 }
 
 .cabecalho img {
     width:150px;
     height:80px;
     animation: loading 0.5s linear;
-    
-
-        
 }
 
 
@@ -49,24 +37,33 @@ body{
 }
 .cabecalho h1 :hover{
     color: black;
-    
 }
 
 .cabecalho ul {
     display: flex;
     font-size: 20px;
     margin-bottom: 5px;
-}   
+    animation: load 0.5s linear;
+}
+
+@keyframes load {
+	0% {
+		opacity: 0;
+        margin-right: -500px;
+	}
+	100% {
+        margin: initial;
+	    opacity: 1;
+	}
+}
 
 .cabecalho ul li {
     margin: 10px;
     list-style: none;
-    color: #000;
-    
+    color: #000;    
 }
 
 .cabecalho ul li a {
-    
     color: #fff;
     background-image: -webkit-linear-gradient(45deg, #24496c 50%, transparent 50%);
     background-image: linear-gradient(45deg, #24496c 50%, transparent 50%);
@@ -77,6 +74,7 @@ body{
     padding: 10px;
     border: 1px solid #fff;
 }
+
 .cabecalho ul li a:hover{
     background-position: 0;
 }
@@ -96,7 +94,19 @@ body{
     margin-top: 20px;
     margin-bottom: 20px;
     box-shadow: 5px 7px 20px #fff;
-    color: #000
+    color: #000;
+    animation: loading 0.5s linear;        
+}
+
+@keyframes loading {
+	0% {
+		opacity: 0;
+        margin-left: -500px;
+	}
+	100% {
+        margin: initial;
+	    opacity: 1;
+	}
 }
 
 .caixa1 h1{
@@ -115,7 +125,6 @@ body{
     margin: 0 auto;
 }
 
-
 .naruto-personagens {
     display: flex;
     padding: 50px 0 10px 0;
@@ -128,6 +137,18 @@ body{
     color: #000;
     margin-top: 20px;
     margin-bottom: 20px;
+    animation: load 0.5s linear;
+}
+
+@keyframes load {
+	0% {
+		opacity: 0;
+        margin-right: -500px;
+	}
+	100% {
+        margin: initial;
+	    opacity: 1;
+	}
 }
 
 .caixa2 p {
@@ -170,8 +191,6 @@ body{
     margin: 0 auto;
 }
 
-
-
 .subtitulo-class h2 {
     padding-left: 30px;
     font-weight: bold;
@@ -180,8 +199,7 @@ body{
 
 .subtitulo-class img {
     margin-right: 5px;
-    margin-top: 5px;
-    
+    margin-top: 5px;    
 }
 
 .subtitulo-class p {
@@ -197,7 +215,6 @@ body{
     padding-top: 20px;
     text-align: center;
     margin: 10px 0px;
-
 }
 
 .subtitulo-img  {
@@ -206,36 +223,31 @@ body{
     padding: 20px 0;
 }
 
-
 .carrosel{
     width: 100%;
     height: 168px;
     outline: 2px solid black;
     overflow: hidden; 
     margin: 0px auto;
-    background-image: url(../img/cl.jpg) !important;
 }
+
 .carrosel ul {
     display: flex;
     list-style: none;
     width: 1768px;
     height: 168px;
-
 }
 
 .carrosel  li{
     position: relative;
     animation: slide 10s infinite ease-out;
-    
 }
 
 @keyframes slide{
     0%{left:0px}
-    50%{left: -240px}
-    100%{left: -600px}
+    50%{left: -300px}
+    100%{left: -730px}
 }
-
-
 
 /* footer */
 
@@ -245,40 +257,39 @@ body{
     width: 100%;
     margin-top: 20px;
 }
-    
-    .footer_subtitulo {
-        width: 80%;
+
+.footer_subtitulo {
+    width: 80%;
     font-size: 18px;
     line-height: 25px;
     letter-spacing: .1em;
     font-weight: bold;
     text-align: center;
-    }
+}
         
-    .footer_subtitulo p {
-        font-size: 16px;
-        line-height: 1.2;
-        letter-spacing: normal;
-        text-transform: none;
-    }
+.footer_subtitulo p {
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-transform: none;
+}
     
+.footer_historia  {
+    text-align:center;
+}
 
-    .footer_historia  {
-        text-align:center;
-    }
+.footer_redes ul {
+    display: flex;
+}
 
-    .footer_redes ul {
-        display: flex;
-    }
-
-    .footer_redes ul li {
+.footer_redes ul li {
     margin-right: 10px;
     margin-top: 10px;
-    }
+}
     
     
-    .footer_redes li :hover{
-        -moz-transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-    }
+.footer_redes li :hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
