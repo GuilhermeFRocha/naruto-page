@@ -251,35 +251,21 @@ body{
 
 /* footer */
 
+.const {
+    text-align: center;
+    margin-top: 20px;
+}
+
 .container {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-top: 20px;
-}
-
-.footer_subtitulo {
-    width: 80%;
-    font-size: 18px;
-    line-height: 25px;
-    letter-spacing: .1em;
-    font-weight: bold;
     text-align: center;
-}
-        
-.footer_subtitulo p {
-    font-size: 16px;
-    line-height: 1.2;
-    letter-spacing: normal;
-    text-transform: none;
-}
-    
-.footer_historia  {
-    text-align:center;
 }
 
 .footer_redes ul {
     display: flex;
+    
 }
 
 .footer_redes ul li {

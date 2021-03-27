@@ -1,0 +1,111 @@
+body{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container2{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+
+.titulo h1 {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin: 20px;
+}
+
+.filho1 {
+    box-shadow: 7px 7px 20px black;
+    animation: aumenta 0.5s linear;
+    }
+    @keyframes aumenta {
+     
+        from {
+            transform: scale(0.3);
+    
+        }
+     
+        to {
+    transform: scale(1);
+    
+        }
+    }
+
+
+
+.filho2 p {
+    line-height: 1.2;
+    text-align: center;
+    font-size: 17px;
+    text-align: justify;
+    padding: 0 20px;
+    overflow: hidden;
+} 
+
+.filho2 {
+    width: 30%;
+    padding: 10px;
+    box-shadow: 5px 7px 20px 5px #fff;
+    animation: load 0.5s linear;
+}
+
+@keyframes load {
+	0% {
+		opacity: 0;
+        margin-right: -500px;
+	}
+	100% {
+        margin: initial;
+	    opacity: 1;
+	}
+}
+
+
+.filho2 h3 {
+    text-align: center;
+    font-weight: bold;    
+}
+
+
+.filho2-2 p {
+    line-height: 1.2;
+    text-align: center;
+    font-size: 17px;
+    text-align: justify;
+    padding: 0 20px;
+    overflow: hidden;
+} 
+
+.filho2-2 {
+    width: 30%;
+    padding: 10px;
+    box-shadow: 5px 7px 20px 5px #fff;
+    animation: loading 0.5s linear;
+}
+
+@keyframes loading {
+	0% {
+		opacity: 0;
+        margin-left: -500px;
+	}
+	100% {
+        margin: initial;
+	    opacity: 1;
+	}
+}
+
+.filho2-2 h3 {
+    text-align: center;
+    font-weight: bold;    
+}
