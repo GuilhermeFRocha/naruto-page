@@ -125,6 +125,10 @@ body{
     margin: 0 auto;
 }
 
+.caixa1 {
+    overflow: hidden;
+}
+
 .naruto-personagens {
     display: flex;
     padding: 50px 0 10px 0;
@@ -154,7 +158,7 @@ body{
 .caixa2 p {
     text-align: center;
     padding: 0 30px 20px 30px;
-    font-size: 12px;
+    font-size: 15px;
     line-height: 18px;
     font-style: italic;
 }
@@ -278,4 +282,70 @@ body{
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+}
+
+/*HOME*/
+
+@media screen and (max-width: 992px) {
+    .cabecalho ul li a{
+       font-size: 30px; 
+    }
+    
+    .carrosel  li{
+        position: relative;
+        animation: slide 10s infinite ease-out;
+    }
+    
+    @keyframes slide{
+        0%{left:0px}
+        50%{left: -300px}
+        100%{left: -975px}
+    }
+    
+    
+    .contenier {
+      flex-direction: column;
+    }
+
+    .caixa1 , .caixa2{
+        width: 100%;
+    }
+
+    .caixa1 p {
+        font-size: 25px;
+    }
+
+    .caixa1 h1 {
+        font-size: 30px;
+    }
+    
+    .naruto-7 img{
+        padding-left: 30px;
+    }
+
+    .naruto-15 img{
+        padding-left: 30px;
+    }
+
+    .naruto-19 img{
+        padding-left: 30px;
+    }
+
+    .naruto-32 img{
+        padding-left: 30px;
+    }
+
+    .naruto-personagens p {
+        font-size: 25px;
+    }
+
+    .caixa2 p{
+        font-size: 22px;
+        line-height: 1.2;
+    }
+
+   .img img {
+        width: 45%;
+        margin: 10px;
+    }  
 }

@@ -109,3 +109,57 @@ body{
     text-align: center;
     font-weight: bold;    
 }
+
+@media screen and (max-width: 992px) {
+    
+    .container{
+        flex-direction: column;
+    }
+
+    .container2{
+        flex-direction: column;
+    }
+
+    .titulo h1 {
+        font-size: 45px;
+        margin: 30px 0;
+    }
+
+
+    
+    iframe {
+        width: 900px;
+        height: 320px;
+    }
+
+    .filho1 img {
+        width: 900px;
+        height: 320px;
+    }
+
+    .filho2 {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .filho2-2 {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .filho2 h3 {
+        font-size: 25px;
+    }
+    
+    .filho2 p{
+    font-size: 25px;
+    } 
+
+    .filho2-2 h3 {
+        font-size: 25px;
+    }
+    
+    .filho2-2 p{
+    font-size: 25px;
+    } 
+    }
