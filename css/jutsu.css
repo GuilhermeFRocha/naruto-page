@@ -1,166 +1,161 @@
-body{
-    width: 90%;
+body {
+  width: 90%;
 }
 
 .contenier2 {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: initial;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: initial;
 }
 
-.minicaixa{
-    width: 22%;
-    margin: 25px 0;
-    text-align: center;
-    box-shadow: 5px 7px 20px 5px #fff;
+.minicaixa {
+  width: 22%;
+  margin: 25px 0;
+  text-align: center;
+  box-shadow: 5px 7px 20px 5px #fff;
 }
 
-.esq{
-animation: loading 0.5s linear;
+.esq {
+  animation: loading 0.5s linear;
 }
 
 @keyframes loading {
-	0% {
-		opacity: 0;
-        margin-left: -500px;
-	}
-	100% {
-        margin: initial;
-	    opacity: 1;
-	}
+  0% {
+    opacity: 0;
+    margin-left: -500px;
+  }
+  100% {
+    margin: initial;
+    opacity: 1;
+  }
 }
 
 .dir {
-    animation: load 0.5s linear;
+  animation: load 0.5s linear;
 }
 
 @keyframes load {
-	0% {
-		opacity: 0;
-        margin-right: -500px;
-	}
-	100% {
-        margin: initial;
-	    opacity: 1;
-	}
+  0% {
+    opacity: 0;
+    margin-right: -500px;
+  }
+  100% {
+    margin: initial;
+    opacity: 1;
+  }
 }
 
-
-.minicaixa:hover{
-    -webkit-transform: scale(1.1);
+.minicaixa:hover {
+  -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-
 .minicaixa h2 {
-    text-align: center;
-    font-weight: bold;
-    margin: 20px 0;
-    overflow: hidden;
+  text-align: center;
+  font-weight: bold;
+  margin: 20px 0;
+  overflow: hidden;
 }
 
 .minicaixa img {
-    width: 90%;
-    box-shadow: 7px 7px 20px #000;
-    margin-bottom: 20px;
+  width: 90%;
+  box-shadow: 7px 7px 20px #000;
+  margin-bottom: 20px;
 }
 
 .minicaixa p {
-    line-height: 1.2;
-    font-size: 17px;
-    text-align: justify;
-    padding: 0 20px;
-    overflow: hidden;
+  line-height: 1.2;
+  font-size: 17px;
+  text-align: justify;
+  padding: 0 20px;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 992px) {
-    .contenier2{
-        flex-direction: column;
-        width: 100%;
+  .contenier2 {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .minicaixa {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  .esq:nth-child(1) {
+    animation: load 0.5s linear;
+  }
+
+  @keyframes load {
+    0% {
+      opacity: 0;
+      margin-right: -500px;
     }
-    
-    .minicaixa {
-        width: 70%;
-        margin: 0 auto;
-        margin-top: 40px;
-            
+    100% {
+      margin: initial;
+      opacity: 1;
     }
+  }
 
+  .dir:nth-child(2) {
+    animation: loading 0.5s linear;
+  }
 
-    .esq:nth-child(1){
-            animation: load 0.5s linear;
-        }
-        
-        @keyframes load {
-            0% {
-                opacity: 0;
-                margin-right: -500px;
-            }
-            100% {
-                margin: initial;
-                opacity: 1;
-            }
-        }
-
-        .dir:nth-child(2){
-            animation: loading 0.5s linear;
-        }
-        
-        @keyframes loading {
-            0% {
-                opacity: 0;
-                margin-left: -500px;
-            }
-            100% {
-                margin: initial;
-                opacity: 1;
-            }
-        }
-
-        .esq:nth-child(3){
-            animation: load 0.5s linear;
-        }
-        
-        @keyframes load {
-            0% {
-                opacity: 0;
-                margin-right: -500px;
-            }
-            100% {
-                margin: initial;
-                opacity: 1;
-            }
-        }
-    
-        .dir:nth-child(4){
-            animation: loading 0.5s linear;
-        }
-        
-        @keyframes loading {
-            0% {
-                opacity: 0;
-                margin-left: -500px;
-            }
-            100% {
-                margin: initial;
-                opacity: 1;
-            }
-        }
-    
-    .contenier2 h2 {
-        font-size: 30px;
+  @keyframes loading {
+    0% {
+      opacity: 0;
+      margin-left: -500px;
     }
-
-    .contenier2 img {
-        width: 300px;
-        height: 250px;
+    100% {
+      margin: initial;
+      opacity: 1;
     }
+  }
 
-    .contenier2 p {
-        font-size: 25px;
-        padding-bottom: 20px;
+  .esq:nth-child(3) {
+    animation: load 0.5s linear;
+  }
+
+  @keyframes load {
+    0% {
+      opacity: 0;
+      margin-right: -500px;
     }
+    100% {
+      margin: initial;
+      opacity: 1;
+    }
+  }
+
+  .dir:nth-child(4) {
+    animation: loading 0.5s linear;
+  }
+
+  @keyframes loading {
+    0% {
+      opacity: 0;
+      margin-left: -500px;
+    }
+    100% {
+      margin: initial;
+      opacity: 1;
+    }
+  }
+
+  .contenier2 h2 {
+    font-size: 30px;
+  }
+
+  .contenier2 img {
+    width: 300px;
+    height: 250px;
+  }
+
+  .contenier2 p {
+    font-size: 25px;
+    padding-bottom: 20px;
+  }
 }
-    

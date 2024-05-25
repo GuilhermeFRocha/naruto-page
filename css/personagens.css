@@ -1,116 +1,105 @@
 body {
-    width: 80%;
-    
+  width: 80%;
 }
 
 .contenier-person {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-
-.titulo{
-    animation: aumenta 0.5s linear;
+.titulo {
+  animation: aumenta 0.5s linear;
 }
 @keyframes aumenta {
- 
-    from {
-        transform: scale(0.5);
+  from {
+    transform: scale(0.5);
+  }
 
-    }
- 
-    to {
-transform: scale(1);
-
-    }
+  to {
+    transform: scale(1);
+  }
 }
 
 .info-2 {
-
-    font-family: Georgia, "Times New Roman", serif;
-    background: rgba(255, 255, 255, 0.3);
-    padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    box-shadow: 5px 7px 20px #fff;
-    color: #000;
-animation: loading 0.5s linear;
+  font-family: Georgia, "Times New Roman", serif;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 5px 7px 20px #fff;
+  color: #000;
+  animation: loading 0.5s linear;
 }
 
 @keyframes loading {
-	0% {
-		opacity: 0;
-        margin-left: -500px;
-	}
-	100% {
-        margin: initial;
-	    opacity: 1;
-	}
+  0% {
+    opacity: 0;
+    margin-left: -500px;
+  }
+  100% {
+    margin: initial;
+    opacity: 1;
+  }
 }
 
-
 .natureza {
-    font-weight: bold;
-    font-size: 20px;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .natureza:after {
-    content: "";
-    display: block;
-    width: 238px;
-    height: 3px;
-    background: black;
+  content: "";
+  display: block;
+  width: 238px;
+  height: 3px;
+  background: black;
 }
 
 .jutsu {
-    animation: load 0.5s linear;
+  animation: load 0.5s linear;
 }
 
 @keyframes load {
-	0% {
-		opacity: 0;
-        margin-right: -500px;
-	}
-	100% {
-        margin: initial;
-	    opacity: 1;
-	}
+  0% {
+    opacity: 0;
+    margin-right: -500px;
+  }
+  100% {
+    margin: initial;
+    opacity: 1;
+  }
 }
 
 .jutsu h1 {
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
-    padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 10px;
 }
 
-.jutsu  img{
-    box-shadow: 7px 7px 20px #000;
+.jutsu img {
+  box-shadow: 7px 7px 20px #000;
 }
 
 @media screen and (max-width: 992px) {
-    .contenier-person{
-        margin-top: 30px;
-    }
-    
-    .contenier-person:nth-of-type(2n+1){
-        flex-direction: row-reverse;
-    }
+  .contenier-person {
+    margin-top: 30px;
+  }
 
+  .contenier-person:nth-of-type(2n + 1) {
+    flex-direction: row-reverse;
+  }
 
-    .info-2 {
-        margin: 20px auto;
-    }
-    .titulo{
-        margin: 0 auto;
-        
-    }
+  .info-2 {
+    margin: 20px auto;
+  }
+  .titulo {
+    margin: 0 auto;
+  }
 
-    .jutsu{
-        margin: 0 auto;
-        display: none;
-    }
-
-    }
+  .jutsu {
+    margin: 0 auto;
+    display: none;
+  }
+}

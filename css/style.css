@@ -1,351 +1,372 @@
-body{
-    background: #f12711;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    width: 80%;
-    margin: 0 auto;
+body {
+  background: #f12711; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #f5af19,
+    #f12711
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #f5af19,
+    #f12711
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 80%;
+  margin: 0 auto;
 }
 
 /* Cabeçalho */
 .cabecalho {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .cabecalho img {
-    width:150px;
-    height:80px;
-    animation: loading 0.5s linear;
+  width: 150px;
+  height: 80px;
+  animation: loading 0.5s linear;
 }
 
-
 @keyframes loading {
-	0% {
-		opacity: 0;
-        margin-left: -500px;
-	}
-	100% {
-        margin: initial;
-	    opacity: 1;
-	}
+  0% {
+    opacity: 0;
+    margin-left: -500px;
+  }
+  100% {
+    margin: initial;
+    opacity: 1;
+  }
 }
 
 .cabecalho h1 {
-    text-align: center;
-    font-size: 50px;
+  text-align: center;
+  font-size: 50px;
 }
-.cabecalho h1 :hover{
-    color: black;
+.cabecalho h1 :hover {
+  color: black;
 }
 
 .cabecalho ul {
-    display: flex;
-    font-size: 20px;
-    margin-bottom: 5px;
-    animation: load 0.5s linear;
+  display: flex;
+  font-size: 20px;
+  margin-bottom: 5px;
+  animation: load 0.5s linear;
 }
 
 @keyframes load {
-	0% {
-		opacity: 0;
-        margin-right: -500px;
-	}
-	100% {
-        margin: initial;
-	    opacity: 1;
-	}
+  0% {
+    opacity: 0;
+    margin-right: -500px;
+  }
+  100% {
+    margin: initial;
+    opacity: 1;
+  }
 }
 
 .cabecalho ul li {
-    margin: 10px;
-    list-style: none;
-    color: #000;    
+  margin: 10px;
+  list-style: none;
+  color: #000;
 }
 
 .cabecalho ul li a {
-    color: #fff;
-    background-image: -webkit-linear-gradient(45deg, #24496c 50%, transparent 50%);
-    background-image: linear-gradient(45deg, #24496c 50%, transparent 50%);
-    background-position: 100%;
-    background-size: 400%;
-    -webkit-transition: background 300ms ease-in-out;
-    transition: background 300ms ease-in-out;
-    padding: 10px;
-    border: 1px solid #fff;
+  color: #fff;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    #24496c 50%,
+    transparent 50%
+  );
+  background-image: linear-gradient(45deg, #24496c 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+  padding: 10px;
+  border: 1px solid #fff;
 }
 
-.cabecalho ul li a:hover{
-    background-position: 0;
+.cabecalho ul li a:hover {
+  background-position: 0;
 }
 
 /* home*/
 
 .contenier {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .caixa1 {
-    width: 60%;
-    background: rgba(255, 255, 255, 0.3);
-    padding: 0 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    box-shadow: 5px 7px 20px #fff;
-    color: #000;
-    animation: loading 0.5s linear;        
+  width: 60%;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 0 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 5px 7px 20px #fff;
+  color: #000;
+  animation: loading 0.5s linear;
 }
 
 @keyframes loading {
-	0% {
-		opacity: 0;
-        margin-left: -500px;
-	}
-	100% {
-        margin: initial;
-	    opacity: 1;
-	}
+  0% {
+    opacity: 0;
+    margin-left: -500px;
+  }
+  100% {
+    margin: initial;
+    opacity: 1;
+  }
 }
 
-.caixa1 h1{
-    font-size: 30px;
-    text-align: center;
-    font-weight: bold;
+.caixa1 h1 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
 }
 
 .caixa1 p {
-    width: 80%;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    line-height: 1.2;
-    font-size: 17px;
-    text-align: justify;
-    margin: 0 auto;
+  width: 80%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  line-height: 1.2;
+  font-size: 17px;
+  text-align: justify;
+  margin: 0 auto;
 }
 
 .caixa1 {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .naruto-personagens {
-    display: flex;
-    padding: 50px 0 10px 0;
+  display: flex;
+  padding: 50px 0 10px 0;
 }
 
 .caixa2 {
-    width: 30%;
-    background: rgba(255, 255, 255, 0.3);
-    box-shadow: 5px 7px 20px #fff;
-    color: #000;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    animation: load 0.5s linear;
+  width: 30%;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 5px 7px 20px #fff;
+  color: #000;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  animation: load 0.5s linear;
 }
 
 @keyframes load {
-	0% {
-		opacity: 0;
-        margin-right: -500px;
-	}
-	100% {
-        margin: initial;
-	    opacity: 1;
-	}
+  0% {
+    opacity: 0;
+    margin-right: -500px;
+  }
+  100% {
+    margin: initial;
+    opacity: 1;
+  }
 }
 
 .caixa2 p {
-    text-align: center;
-    padding: 0 30px 20px 30px;
-    font-size: 15px;
-    line-height: 18px;
-    font-style: italic;
+  text-align: center;
+  padding: 0 30px 20px 30px;
+  font-size: 15px;
+  line-height: 18px;
+  font-style: italic;
 }
 
 .subtitulo {
-    color: #000;
-    font-size: 20px;
-    padding-top: 20px;
-    text-align: center;
-    margin: 10px 0px;
-    font-weight: bold;
+  color: #000;
+  font-size: 20px;
+  padding-top: 20px;
+  text-align: center;
+  margin: 10px 0px;
+  font-weight: bold;
 }
 
 .img {
-    text-align: center;    
-    width: 80%;
-    margin: 0 auto;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .img img {
-    width: 100%;
-    background-size: cover;
-    overflow: hidden;
+  width: 100%;
+  background-size: cover;
+  overflow: hidden;
 }
 
 .subtitulo-class {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: flex;
-    border: top solid #ccc;
-    border-bottom: 2px solid black;
-    border-top: 2px solid black;
-    width: 80%;
-    margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  border: top solid #ccc;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .subtitulo-class h2 {
-    padding-left: 30px;
-    font-weight: bold;
-    margin-top: 5px;
+  padding-left: 30px;
+  font-weight: bold;
+  margin-top: 5px;
 }
 
 .subtitulo-class img {
-    margin-right: 5px;
-    margin-top: 5px;    
+  margin-right: 5px;
+  margin-top: 5px;
 }
 
 .subtitulo-class p {
-    margin-bottom: 5px;
-    padding: 0 80px 0 0px;
-    font-size: 16px;
-    margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0 80px 0 0px;
+  font-size: 16px;
+  margin-top: 5px;
 }
 
 .subtitulo-pt {
-    color: #000;
-    font-size: 25px;
-    padding-top: 20px;
-    text-align: center;
-    margin: 10px 0px;
+  color: #000;
+  font-size: 25px;
+  padding-top: 20px;
+  text-align: center;
+  margin: 10px 0px;
 }
 
-.subtitulo-img  {
-    font-size: 20px;
-    text-align: center;
-    padding: 20px 0;
+.subtitulo-img {
+  font-size: 20px;
+  text-align: center;
+  padding: 20px 0;
 }
 
-.carrosel{
-    width: 100%;
-    height: 168px;
-    outline: 2px solid black;
-    overflow: hidden; 
-    margin: 0px auto;
+.carrosel {
+  width: 100%;
+  height: 168px;
+  outline: 2px solid black;
+  overflow: hidden;
+  margin: 0px auto;
 }
 
 .carrosel ul {
-    display: flex;
-    list-style: none;
-    width: 1768px;
-    height: 168px;
+  display: flex;
+  list-style: none;
+  width: 1768px;
+  height: 168px;
 }
 
-.carrosel  li{
-    position: relative;
-    animation: slide 10s infinite ease-out;
+.carrosel li {
+  position: relative;
+  animation: slide 10s infinite ease-out;
 }
 
-@keyframes slide{
-    0%{left:0px}
-    50%{left: -300px}
-    100%{left: -730px}
+@keyframes slide {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: -300px;
+  }
+  100% {
+    left: -730px;
+  }
 }
 
 /* footer */
 
 .const {
-    text-align: center;
-    margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    text-align: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-align: center;
 }
 
 .footer_redes ul {
-    display: flex;
-    
+  display: flex;
 }
 
 .footer_redes ul li {
-    margin-right: 10px;
-    margin-top: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
 }
-    
-    
-.footer_redes li :hover{
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+
+.footer_redes li :hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /*HOME*/
 
 @media screen and (max-width: 992px) {
-    .cabecalho ul li a{
-       font-size: 30px; 
-    }
-    
-    .carrosel  li{
-        position: relative;
-        animation: slide 10s infinite ease-out;
-    }
-    
-    @keyframes slide{
-        0%{left:0px}
-        50%{left: -300px}
-        100%{left: -975px}
-    }
-    
-    
-    .contenier {
-      flex-direction: column;
-    }
+  .cabecalho ul li a {
+    font-size: 30px;
+  }
 
-    .caixa1 , .caixa2{
-        width: 100%;
-    }
+  .carrosel li {
+    position: relative;
+    animation: slide 10s infinite ease-out;
+  }
 
-    .caixa1 p {
-        font-size: 25px;
+  @keyframes slide {
+    0% {
+      left: 0px;
     }
+    50% {
+      left: -300px;
+    }
+    100% {
+      left: -975px;
+    }
+  }
 
-    .caixa1 h1 {
-        font-size: 30px;
-    }
-    
-    .naruto-7 img{
-        padding-left: 30px;
-    }
+  .contenier {
+    flex-direction: column;
+  }
 
-    .naruto-15 img{
-        padding-left: 30px;
-    }
+  .caixa1,
+  .caixa2 {
+    width: 100%;
+  }
 
-    .naruto-19 img{
-        padding-left: 30px;
-    }
+  .caixa1 p {
+    font-size: 25px;
+  }
 
-    .naruto-32 img{
-        padding-left: 30px;
-    }
+  .caixa1 h1 {
+    font-size: 30px;
+  }
 
-    .naruto-personagens p {
-        font-size: 25px;
-    }
+  .naruto-7 img {
+    padding-left: 30px;
+  }
 
-    .caixa2 p{
-        font-size: 22px;
-        line-height: 1.2;
-    }
+  .naruto-15 img {
+    padding-left: 30px;
+  }
 
-   .img img {
-        width: 45%;
-        margin: 10px;
-    }  
+  .naruto-19 img {
+    padding-left: 30px;
+  }
+
+  .naruto-32 img {
+    padding-left: 30px;
+  }
+
+  .naruto-personagens p {
+    font-size: 25px;
+  }
+
+  .caixa2 p {
+    font-size: 22px;
+    line-height: 1.2;
+  }
+
+  .img img {
+    width: 45%;
+    margin: 10px;
+  }
 }
